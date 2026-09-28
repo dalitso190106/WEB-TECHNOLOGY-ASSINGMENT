@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalitso Phiri - Personal Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<header>
+    <h1>Dalitso Phiri - Personal Student Portfolio</h1>
+</header>
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#learning">Learning Plan</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+</nav>
+
+    <main>
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>Hey there! I am Dalitso Emmanuel Phiri, currently in my second year studying Computer Science at Mulungushi University.
+I first got into programming because I became curious about how the sites we use daily are built behind the scenes. Knowing that a few lines of code can bring a whole digital experience to life made me want to build things myself. Web tech feels like a very good combination of problem-solving and creative design.
+Through this course, I am looking forward to building a strong foundation in HTML, CSS, and JavaScript, with the goal of launching a personal portfolio site I am genuinely proud to share with future employers.</p>
+            <!-- We will write your paragraph here in Recipe 4 -->
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+                 <ul>
+                    <li>I enjoy watching movies</li>
+                    <li>I enjoy listening to music</li>
+                    <li>I like going for road runs</li>
+                 </ul>
+            <!-- Your hobbies list goes here -->
+        </section>
+
+        <section id="learning" class="content-section">
+    <h2>Learning Plan</h2>
+
+    <!-- Introductory paragraph -->
+    <p>My current objective is to gain a deep understanding of modern web standards. I want to build a solid foundation in clean HTML markup, custom CSS layouts, and intuitive user experiences that perform seamlessly across all devices.</p>
+
+    <!-- Steps subsection -->
+    <h3>Steps to Improve My Web Skills</h3>
+    <ol>
+        <li>Dedicate time each evening to practice writing structural HTML and styling components from scratch.</li>
+        <li>Review web developer documentation and analyze well-designed sites to learn industry best practices.</li>
+        <li>Create small personal projects to apply new layout techniques and test responsive designs.</li>
+    </ol>
+
+    <!-- Table subsection -->
+    <h3>Web Development Goals</h3>
+    <table>
+        <caption>Weekly Web Learning Schedule</caption>
+        <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Practice Task</th>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Page Layouts</td>
+            <td>Organize HTML pages using semantic tags and sectioning</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>CSS Box Model</td>
+            <td>Style margins, borders, and spacing for structural elements</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>Embedded Media</td>
+            <td>Add responsive images, video players, and media content</td>
+        </tr>
+    </table>
+</section>
+<section id="photos" class="content-section">
+    <h2>My Photos</h2>
+
+    <!--photo 1-->
+    <figure>
+        <img src="images/photo1.jpg" alt="A photo of Dalitso Phiri" width="300" height="200">
+        <figcaption>Campus Life at Mulungushi University</figcaption>
+    </figure>
+
+    <!-- Photo 2 -->
+    <figure>
+        <img src="images/photo2.jpg" alt="My laptop workspace for web development" width="300" height="200">
+        <figcaption>On campus in one of the hostels</figcaption>
+    </figure>
+
+    <!-- Photo 3 -->
+    <figure>
+        <img src="images/photo3.jpg" alt="Running shoes during an evening run" width="300" height="200">
+        <figcaption>Coming from a place of worship</figcaption>
+    </figure>
+</section>
+
+<section id="media" class="content-section">
+    <h2>My Media</h2>
+
+    <!-- Video element from Recipe 8 -->
+    <h3>My Web Learning Plan Video</h3>
+    <video controls width="500">
+        <source src="videos/learning_plan_video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <!-- Audio element for Recipe 9 -->
+    <h3>Audio Introduction</h3>
+    <audio controls>
+        <source src="videos/intro_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+<section id="contact" class="content-section">
+    <h2>Contact</h2>
+
+    <form action="#" method="post">
+        <p>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        </p>
+
+        <p>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Send Message">
+        </p>
+    </form>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dalitso Phiri. All rights reserved.</p>
+    </footer>
+</body>
+</html>

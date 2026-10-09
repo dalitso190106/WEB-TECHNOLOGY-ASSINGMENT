@@ -5,147 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dalitso Phiri - Personal Website</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
-<header>
+<body>
+
+<header id="top">
     <h1>Dalitso Phiri - Personal Student Portfolio</h1>
+    <p>Computer Science Student | Mulungushi University</p>
+    <div class="hero-actions">
+        <a href="#projects" class="btn">View My Projects</a>
+        <button id="theme-toggle" class="btn-secondary">Toggle Dark/Light Mode</button>
+    </div>
 </header>
+
 <nav>
-    <a href="#about">About Me</a>
-    <a href="#hobbies">My Hobbies</a>
-    <a href="#learning">Learning Plan</a>
-    <a href="#photos">My Photos</a>
-    <a href="#media">My Media</a>
-    <a href="#contact">Contact</a>
-    <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+    <button id="menu-toggle" class="menu-btn" aria-label="Toggle Navigation">☰ Menu</button>
+    <div id="nav-links" class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#learning">Learning Plan</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#contact">Contact</a>
+        <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+    </div>
 </nav>
 
-    <main>
-        <section id="about" class="content-section">
-            <h2>About Me</h2>
-            <p>Hey there! I am Dalitso Emmanuel Phiri, currently in my second year studying Computer Science at Mulungushi University.
-I first got into programming because I became curious about how the sites we use daily are built behind the scenes. Knowing that a few lines of code can bring a whole digital experience to life made me want to build things myself. Web tech feels like a very good combination of problem-solving and creative design.
-Through this course, I am looking forward to building a strong foundation in HTML, CSS, and JavaScript, with the goal of launching a personal portfolio site I am genuinely proud to share with future employers.</p>
-            <!-- We will write your paragraph here in Recipe 4 -->
-        </section>
+<main>
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>Hey there! I am Dalitso Emmanuel Phiri, currently in my second year studying Computer Science at Mulungushi University. I first got into programming because I became curious about how the sites we use daily are built behind the scenes. Knowing that a few lines of code can bring a whole digital experience to life made me want to build things myself. Web tech feels like a very good combination of problem-solving and creative design. Through this course, I am looking forward to building a strong foundation in HTML, CSS, and JavaScript, with the goal of launching a personal portfolio site I am genuinely proud to share with future employers.</p>
+    </section>
 
-        <section id="hobbies" class="content-section">
-            <h2>My Hobbies</h2>
-                 <ul>
-                    <li>I enjoy watching movies</li>
-                    <li>I enjoy listening to music</li>
-                    <li>I like going for road runs</li>
-                 </ul>
-            <!-- Your hobbies list goes here -->
-        </section>
+    <!-- Activity 3: Projects & Skills Section -->
+    <section id="projects" class="content-section">
+        <h2>My Projects & Skills</h2>
+        <p>Here are three practical web development projects I have built during my studies:</p>
 
-        <section id="learning" class="content-section">
-    <h2>Learning Plan</h2>
+        <article class="project-card">
+            <h3>1. HTML5 Portfolio Website</h3>
+            <p>A clean, semantic portfolio website built with HTML5 elements, navigation links, and customized styling.</p>
+            <button class="toggle-details-btn">Show Details</button>
+            <div class="project-details hidden">
+                <p><strong>Key Skills:</strong> Semantic Tags, Heading Hierarchy, Accessible Anchor Navigation.</p>
+            </div>
+        </article>
 
-    <!-- Introductory paragraph -->
-    <p>My current objective is to gain a deep understanding of modern web standards. I want to build a solid foundation in clean HTML markup, custom CSS layouts, and intuitive user experiences that perform seamlessly across all devices.</p>
+        <article class="project-card">
+            <h3>2. Course Learning Schedule Table</h3>
+            <p>A structured weekly learning plan displaying study topics, goals, and practice tasks in a clean tabular view.</p>
+            <button class="toggle-details-btn">Show Details</button>
+            <div class="project-details hidden">
+                <p><strong>Key Skills:</strong> HTML Tables, Captions, Column Headers, and Cell Padding CSS.</p>
+            </div>
+        </article>
 
-    <!-- Steps subsection -->
-    <h3>Steps to Improve My Web Skills</h3>
-    <ol>
-        <li>Dedicate time each evening to practice writing structural HTML and styling components from scratch.</li>
-        <li>Review web developer documentation and analyze well-designed sites to learn industry best practices.</li>
-        <li>Create small personal projects to apply new layout techniques and test responsive designs.</li>
-    </ol>
+        <article class="project-card">
+            <h3>3. Interactive Form & Validation</h3>
+            <p>A client-side interactive form featuring real-time JavaScript input validation and dynamic preview output.</p>
+            <button class="toggle-details-btn">Show Details</button>
+            <div class="project-details hidden">
+                <p><strong>Key Skills:</strong> JavaScript DOM Manipulation, Event Handling, Regular Expression Email Validation.</p>
+            </div>
+        </article>
+    </section>
 
-    <!-- Table subsection -->
-    <h3>Web Development Goals</h3>
-    <table>
-        <caption>Weekly Web Learning Schedule</caption>
-        <tr>
-            <th>Day</th>
-            <th>Topic</th>
-            <th>Practice Task</th>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td>Page Layouts</td>
-            <td>Organize HTML pages using semantic tags and sectioning</td>
-        </tr>
-        <tr>
-            <td>Thursday</td>
-            <td>CSS Box Model</td>
-            <td>Style margins, borders, and spacing for structural elements</td>
-        </tr>
-        <tr>
-            <td>Saturday</td>
-            <td>Embedded Media</td>
-            <td>Add responsive images, video players, and media content</td>
-        </tr>
-    </table>
-</section>
-<section id="photos" class="content-section">
-    <h2>My Photos</h2>
+    <section id="hobbies" class="content-section">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>I enjoy watching movies</li>
+            <li>I enjoy listening to music</li>
+            <li>I like going for road runs</li>
+        </ul>
+    </section>
 
-    <!--photo 1-->
-    <figure>
-        <img src="images/photo1.jpg" alt="A photo of Dalitso Phiri" width="300" height="200">
-        <figcaption>Campus Life at Mulungushi University</figcaption>
-    </figure>
+    <section id="learning" class="content-section">
+        <h2>Learning Plan</h2>
+        <p>My current objective is to gain a deep understanding of modern web standards. I want to build a solid foundation in clean HTML markup, custom CSS layouts, and intuitive user experiences that perform seamlessly across all devices.</p>
 
-    <!-- Photo 2 -->
-    <figure>
-        <img src="images/photo2.jpg" alt="My laptop workspace for web development" width="300" height="200">
-        <figcaption>On campus in one of the hostels</figcaption>
-    </figure>
+        <h3>Steps to Improve My Web Skills</h3>
+        <ol>
+            <li>Dedicate time each evening to practice writing structural HTML and styling components from scratch.</li>
+            <li>Review web developer documentation and analyze well-designed sites to learn industry best practices.</li>
+            <li>Create small personal projects to apply new layout techniques and test responsive designs.</li>
+        </ol>
 
-    <!-- Photo 3 -->
-    <figure>
-        <img src="images/photo3.jpg" alt="Running shoes during an evening run" width="300" height="200">
-        <figcaption>Coming from a place of worship</figcaption>
-    </figure>
-</section>
+        <h3>Web Development Goals</h3>
+        <table>
+            <caption>Weekly Web Learning Schedule</caption>
+            <tr>
+                <th>Day</th>
+                <th>Topic</th>
+                <th>Practice Task</th>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Page Layouts</td>
+                <td>Organize HTML pages using semantic tags and sectioning</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>CSS Box Model</td>
+                <td>Style margins, borders, and spacing for structural elements</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Embedded Media</td>
+                <td>Add responsive images, video players, and media content</td>
+            </tr>
+        </table>
+    </section>
 
-<section id="media" class="content-section">
-    <h2>My Media</h2>
+    <section id="photos" class="content-section">
+        <h2>My Photos</h2>
+        <figure>
+            <img src="images/photo1.jpg" alt="A photo of Dalitso Phiri" width="300" height="200">
+            <figcaption>Campus Life at Mulungushi University</figcaption>
+        </figure>
+        <figure>
+            <img src="images/photo2.jpg" alt="My laptop workspace for web development" width="300" height="200">
+            <figcaption>On campus in one of the hostels</figcaption>
+        </figure>
+        <figure>
+            <img src="images/photo3.jpg" alt="Running shoes during an evening run" width="300" height="200">
+            <figcaption>Coming from a place of worship</figcaption>
+        </figure>
+    </section>
 
-    <!-- Video element from Recipe 8 -->
-    <h3>My Web Learning Plan Video</h3>
-    <video controls width="500">
-        <source src="videos/learning_plan_video.mp4" type="video/mp4">
-        Your browser does not support the video element.
-    </video>
+    <section id="media" class="content-section">
+        <h2>My Media</h2>
+        <h3>My Web Learning Plan Video</h3>
+        <video controls width="500">
+            <source src="videos/learning_plan_video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
 
-    <!-- Audio element for Recipe 9 -->
-    <h3>Audio Introduction</h3>
-    <audio controls>
-        <source src="videos/intro_audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-</section>
+        <h3>Audio Introduction</h3>
+        <audio controls>
+            <source src="videos/intro_audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
-<section id="contact" class="content-section">
-    <h2>Contact</h2>
+    <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <form id="contact-form" action="#" method="post">
+            <p>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                <small id="name-error" class="error-msg"></small>
+            </p>
 
-    <form action="#" method="post">
-        <p>
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-        </p>
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                <small id="email-error" class="error-msg"></small>
+            </p>
 
-        <p>
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required placeholder="Enter your email address">
-        </p>
+            <p>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                <small id="message-error" class="error-msg"></small>
+            </p>
 
-        <p>
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
-        </p>
+            <p>
+                <input type="submit" value="Send Message">
+            </p>
+        </form>
 
-        <p>
-            <input type="submit" value="Send Message">
-        </p>
-    </form>
-</section>
-    </main>
+        <!-- Activity 3: Local Form Preview Container -->
+        <div id="form-preview" class="form-preview hidden">
+            <h3>Submission Preview (Browser Demonstration Only)</h3>
+            <p><em>Note: Data was validated locally; no message was sent to a server.</em></p>
+            <p><strong>Name:</strong> <span id="preview-name"></span></p>
+            <p><strong>Email:</strong> <span id="preview-email"></span></p>
+            <p><strong>Message:</strong> <span id="preview-message"></span></p>
+        </div>
+    </section>
+</main>
 
-    <footer>
-        <p>&copy; 2026 Dalitso Phiri. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 Dalitso Phiri. All rights reserved.</p>
+    <p><a href="https://github.com/your-username/myweb" target="_blank" style="color: #ffffff;">View Source on GitHub</a></p>
+</footer>
+
 </body>
 </html>
